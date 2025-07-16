@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: #00ffe1;
+  font-family: 'Orbitron', monospace;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bg-particles {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #00ffe155, transparent 70%) center center / 10px 10px;
+  animation: backgroundShift 20s infinite linear;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+@keyframes backgroundShift {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 1000px; }
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: linear-gradient(to right, #0ff, #f0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  text-shadow: 0 0 20px #0ff;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 2px solid #00ffe1;
+  border-radius: 999px;
+  background-color: transparent;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px #00ffe199;
+}
+
+.tab:hover,
+.tab.active {
+  background: #00ffe1;
+  color: #0f0f0f;
+  font-weight: bold;
+  box-shadow: 0 0 30px #00ffe1;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  transition: all 0.5s;
+}
+
+.panel {
+  display: none;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.panel.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.counter-container {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  opacity: 0.4;
+}
