@@ -23,7 +23,7 @@
 ```
 
 ## 🛠 Tech Stack
-<p align="center"> <img src="https://skillicons.dev/icons?i=python,cpp,cs,html,css,js,linux,unity" /> </p>
+<p align="center"> <img src="https://skillicons.dev/icons?i=python,cpp,dart,bash,cs" /><img src="https://skillicons.dev/icons?i=html,css,js,linux,unity" /> </p>
 
 ## 🧰 Tools I Use
 <p align="center"> <img src="https://skillicons.dev/icons?i=vscode,visualstudio,pycharm,git,github" /></p>
